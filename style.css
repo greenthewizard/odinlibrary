@@ -1,0 +1,44 @@
+#library {
+	width: 600px;
+	margin: 50px auto;
+	padding: 1em;
+	border: 1px solid #ddd;
+}
+
+#library h1 {
+	margin: 5px 0;
+	padding: 0;
+}
+
+#library a {
+	color: #000;
+	text-decoration: none;
+}
+
+#library a:hover {
+	color: #00f;
+}
+
+#book-list {
+	list-style: none;
+	text-indent: none;
+	padding: 0;
+	margin: 0 0 10px;
+}
+
+.read {
+	text-decoration: line-through;
+	color: #bbb;
+}
+
+#new-book-form {
+	width: 300px;
+}
+
+#new-book-form label {
+	width: 20%;
+	display: inline-block;
+}
+#new-book-form input {
+	width: 60%;
+}
