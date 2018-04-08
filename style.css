@@ -1,5 +1,6 @@
 #library {
-	width: 600px;
+	max-width: 600px;
+	width: 80%;
 	margin: 50px auto;
 	padding: 1em;
 	border: 1px solid #ddd;
@@ -19,6 +20,10 @@
 	color: #00f;
 }
 
+#library a.del {
+	margin: 0 5px;
+}
+
 #book-list {
 	list-style: none;
 	text-indent: none;
@@ -33,12 +38,23 @@
 
 #new-book-form {
 	width: 300px;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.5s ease-in-out;
+}
+
+#new-book-form.show {
+	max-height: 150px;
 }
 
 #new-book-form label {
 	width: 20%;
 	display: inline-block;
 }
-#new-book-form input {
-	width: 60%;
+#new-book-form input .book-field {
+	width: 80%;
+}
+
+.hide {
+	display: none;
 }
